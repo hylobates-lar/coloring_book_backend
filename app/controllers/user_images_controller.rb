@@ -1,5 +1,5 @@
 class UserImagesController < ApplicationController
-    before_action :authorized, only: [:index, :create, :show, :update]
+    before_action :authorized
 
     def index 
         @user_images = @user.user_images
@@ -24,6 +24,14 @@ class UserImagesController < ApplicationController
         @user_image.update!(user_image_params)
 
         render json: @user_image
+    end
+
+    def destroy
+        @user_images = @user.user_images
+        @user_image = @user.user_images.find(params[:id])
+        @user_image.destroy
+
+        render json: @user_images
     end
 
     private

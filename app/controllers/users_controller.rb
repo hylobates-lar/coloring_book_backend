@@ -19,7 +19,7 @@ class UsersController < ApplicationController
         wristband = encode_token({user_id: @user.id})
         render json: { user: UserSerializer.new(@user), token: wristband }
       else
-        render json: {error: "Oops try again!"}, status: 401
+        render json: {error: "Oops user not found! Try again"}, status: 401
       end
     end
     
