@@ -5,6 +5,7 @@ class CreateImages < ActiveRecord::Migration[6.0]
       t.string :component
       t.string :svg_url
       t.string :national_park
+      
 
       t.timestamps
     end
