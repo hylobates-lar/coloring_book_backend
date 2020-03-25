@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2020_03_13_141849) do
     t.string "component"
     t.string "svg_url"
     t.string "national_park"
+    t.string "year"
+    t.string "location"
+    t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
