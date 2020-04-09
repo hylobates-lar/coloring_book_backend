@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
 Image.destroy_all
@@ -12,9 +5,7 @@ UserImage.destroy_all
 
 ali = User.create(username: "alison", password: "123")
 
-# Image.create(title: "sunflower", component: "Sunflower", svg_url: "/images/sunflower.svg", national_park: "", year: "", location: "", description: "")
-# Image.create(title: "rose", component: "Rose", svg_url: "/images/rose.svg", national_park: "", year: "", location: "", description: "")
-# Image.create(title: "flower", component: "Flower", svg_url: "/images/simple_flower.svg", national_park: "", year: "", location: "", description: "")
+
 sequoia = Image.create(title: "Sequoia", component: "Sequoia", svg_url: "/images/sequoia.svg", national_park: "Sequoia", year: "1890", location: "California", description: "Sequoia National Park is adjacent to Kings Canyon National Park in California's southern Sierra Nevada mountains. It's known for its huge sequoia trees, notably the General Sherman Tree dominating the Giant Forest. The underground Crystal Cave features streams and striking rock formations. Moro Rock is a granite dome offering sweeping park views. Nearby is the Tunnel Tree, a toppled tree cut to accommodate the road.")
 yosemite = Image.create(title: "Yosemite", component: "Yosemite", svg_url: "/images/yosemite.svg", national_park: "Yosemite", year: "1890", location: "California", description: "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park's centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America's tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species.")
 arches = Image.create(title: "Arches", component: "Arches", svg_url: "/images/arches.svg", national_park: "Arches", year: "1929", location: "Utah", description: "This site features more than 2,000 natural sandstone arches, with some of the most popular arches in the park being Delicate Arch, Landscape Arch and Double Arch.[15] Millions of years of erosion have created these structures located in a desert climate where the arid ground has life-sustaining biological soil crusts and potholes that serve as natural water-collecting basins. Other geologic formations include stone pinnacles, fins, and balancing rocks.")

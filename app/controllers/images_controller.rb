@@ -5,8 +5,5 @@ class ImagesController < ApplicationController
         @images = Image.all 
         render json: @images
     end
-
-    
-
-    
+      
 end
