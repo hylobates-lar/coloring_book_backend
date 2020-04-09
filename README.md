@@ -8,7 +8,7 @@ Ideally I would also love to use this app to provide fundraising support for the
 
  
 ## Screenshot
-![Screenshot](../coloring_book_frontend/readme-screenshot.png)
+![Screenshot](/readme-screenshot.png)
 
 
 ## Features
